@@ -9,10 +9,6 @@ if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/vimrc ~/.vimrc
 fi
 
-if [ ! -e ~/.gvimrc ]; then
-  ln -s ~/dotfiles/gvimrc ~/.gvimrc
-fi
-
 # git
 if [ ! -e ~/.gitconfig ]; then
   ln -s ~/dotfiles/gitconfig ~/.gitconfig
@@ -25,11 +21,6 @@ fi
 # tmux
 if [ ! -e ~/.tmux.conf ]; then
   ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-fi
-
-# gemrc
-if [ ! -e ~/.gemrc ]; then
-  ln -s ~/dotfiles/gemrc ~/.gemrc
 fi
 
 # ackrc
