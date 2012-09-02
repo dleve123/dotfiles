@@ -7,7 +7,7 @@ alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
 export EDITOR=vim
 
-source ~/git-complete.sh
+source ~/dotfiles/git-completion.bash
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
