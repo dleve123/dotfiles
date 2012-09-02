@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# vim
-if [ ! -e ~/.vim ]; then
-  ln -s ~/dotfiles/vim ~/.vim
-fi
-
 if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/vimrc ~/.vimrc
 fi
