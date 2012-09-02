@@ -33,9 +33,3 @@ bashgrep=$(grep "source ~/dotfiles/bashrc" ~/.bashrc)
 if [ "$bashgrep" != "source ~/dotfiles/bashrc" ]; then
   echo "source ~/dotfiles/bashrc" >> ~/.bashrc
 fi
-
-# Submodules
-git submodule init
-git submodule update
-
-
