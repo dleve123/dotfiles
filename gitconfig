@@ -1,13 +1,12 @@
 [color]
   ui = auto
-
 [core]
   excludesfile = /Users/daniel/.gitignore_global
   autocrlf = input
   safecrlf = true
 [user]
   name = Daniel Levenson
-  email = dlev@smartlogicsolutions.com
+  email = dleve123@gmail.com
 [alias]
   co = checkout
   ci = commit
