@@ -2,6 +2,7 @@ PATH=/usr/local/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 alias ls="ls -G"
+alias svim="sudo vim"
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
