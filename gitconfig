@@ -2,7 +2,7 @@
   ui = auto
 [core]
   excludesfile = /Users/daniel/.gitignore_global
-  autocrlf = input
+  autocrlf = false
   safecrlf = true
 [user]
   name = Daniel Levenson
