@@ -6,6 +6,8 @@ alias svim="sudo vim"
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
+alias jenkins_connect="ssh -i .creds/aws/dleve123-key-pair-us-east.pem ubuntu@ec2-75-101-255-76.compute-1.amazonaws.com"
+
 export EDITOR=vim
 
 source ~/dotfiles/git-completion.bash
