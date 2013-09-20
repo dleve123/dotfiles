@@ -4,3 +4,4 @@
 --type-set=cucumber=.feature
 --type-set=yml=.yml
 --smart-case
+--ignore-dir=tmp
