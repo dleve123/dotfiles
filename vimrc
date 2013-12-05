@@ -13,7 +13,6 @@ syntax on
 filetype off
 filetype plugin indent on
 
-
 " Setting up background with solarized.
 set t_Co=256
 set background=dark
