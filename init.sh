@@ -23,6 +23,16 @@ if [ ! -e ~/.ackrc ]; then
   ln -s ~/dotfiles/ackrc ~/.ackrc
 fi
 
+# inputrc
+if [ ! -e ~/.inputrc ]; then
+  ln -s ~/dotfiles/inputrc ~/.inputrc
+fi
+
+# editrc
+if [ ! -e ~/.editrc ]; then
+  ln -s ~/dotfiles/editrc ~/.editrc
+fi
+
 # bashrc
 bashgrep=$(grep "source ~/dotfiles/bashrc" ~/.bashrc)
 if [ "$bashgrep" != "source ~/dotfiles/bashrc" ]; then
