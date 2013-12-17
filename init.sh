@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# vimrc
 if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/vimrc ~/.vimrc
+fi
+
+
+# vim dir
+if [ ! -e ~/.vim ]; then
+  ln -s ~/dotfiles/vim ~/.vim
 fi
 
 # git
