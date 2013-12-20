@@ -36,9 +36,12 @@ set shiftwidth=2
 set softtabstop=2
 
 " Handles vim temp and backup files
+silent !mkdir ~/.vim_workplace > /dev/null 2>&1
+silent !mkdir ~/.vim_workplace/backup > /dev/null 2>&1
+silent !mkdir ~/.vim_workplace/tmp > /dev/null 2>&1
 set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+set backupdir=~/.vim_workplace/backup
+set directory=~/.vim_workplace/tmp
 
 " Controls visible window area.
 set scrolloff=10
