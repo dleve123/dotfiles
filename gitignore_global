@@ -40,3 +40,8 @@ tags
 # netrwhist #
 #############
 .netrwhist
+
+# swap and backup #
+###################
+*.swp
+*~
