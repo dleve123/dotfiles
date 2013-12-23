@@ -43,6 +43,9 @@ set backup
 set backupdir=~/.vim_workplace/backup
 set directory=~/.vim_workplace/tmp
 
+" Place .viminfo file in .vim_workplace
+set viminfo+=n~/.vim_workplace/.viminfo
+
 " Controls visible window area.
 set scrolloff=10
 
