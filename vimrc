@@ -65,7 +65,6 @@ autocmd User Rails Rnavcommand fabricator spec/fabricators -suffix=_fabricator.r
 autocmd User Rails Rnavcommand feature features -suffix=.feature -default=cucumber
 autocmd User Rails Rnavcommand support spec/support features/support -default=env
 
-
 " Disabling the arrow keys.
 map <Left> <Nop>
 map <Right> <Nop>
