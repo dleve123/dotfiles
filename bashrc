@@ -5,6 +5,8 @@ export EDITOR=vim
 
 # Useful bash command aliases
 alias ls="ls -G"
+alias ll="ls -al"
+alias l.="ls -d .*"
 alias svim="sudo vim"
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
