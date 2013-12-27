@@ -5,3 +5,4 @@
 - [x] definitely fix dotfiles repo so that vim backup files are removed or the proper directories are created!
 - [ ] FIX autocompletion of variable names in rails console (/ irb?) when in vi-mode!!!
 - [ ] implement vim-surround
+- [ ] Freaking learn how to make basic vim macros already - jeez
