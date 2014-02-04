@@ -3,6 +3,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Vim errywhere
 export EDITOR=vim
 
+alias vi="vim"
+
 # Useful bash command aliases
 alias ls="ls -G"
 alias ll="ls -al"
