@@ -14,6 +14,10 @@ alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
 
+# Java aliases
+alias javac="javac -Xlint:all"
+alias java="java -ea"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH=$HOME/local/bin:$PATH
