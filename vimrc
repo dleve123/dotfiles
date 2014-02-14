@@ -55,9 +55,10 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 set wildmode=list:longest,list:full
 
-" leader remaps
+" leader bindings
 map <Leader>m :BufExplorer<CR>
 map <Leader><Space> :noh<CR>
+map <Leader>rh xea:f=3x
 
 " Disabling the arrow keys.
 map <Left> <Nop>
