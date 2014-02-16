@@ -17,6 +17,8 @@ alias rspec="rspec --color"
 # Java aliases
 alias javac="javac -Xlint:all"
 alias java="java -ea"
+alias compileTests="javac -cp junit-4.11.jar:."
+alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
