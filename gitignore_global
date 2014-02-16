@@ -44,3 +44,7 @@ tags
 ###################
 *.swp
 *~
+
+# JHU checkstype specifications #
+#################################
+jhu_checks.xml
