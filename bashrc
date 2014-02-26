@@ -19,6 +19,7 @@ alias javac="javac -Xlint:all"
 alias java="java -ea"
 alias compileTests="javac -cp junit-4.11.jar:."
 alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
+alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
