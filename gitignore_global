@@ -29,6 +29,7 @@
 .DS_Store*
 ehthumbs.db
 Thumbs.db
+._*
 
 # tags #
 ########
