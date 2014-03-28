@@ -17,7 +17,7 @@ alias rspec="rspec --color"
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
 
 # Git macros
-alias git-delete-merged="git branch --merged | grep -v "\*" | xargs -n 1 git branch -d"
+alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 # Java aliases
 alias javac="javac -Xlint:all"
