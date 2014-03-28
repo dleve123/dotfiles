@@ -2,7 +2,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Vim errywhere
 export EDITOR=vim
-
 alias vi="vim"
 
 # Useful bash command aliases
@@ -13,6 +12,12 @@ alias svim="sudo vim"
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
+
+# PostgreSQL
+alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
+
+# Git macros
+alias git-delete-merged="git branch --merged | grep -v "\*" | xargs -n 1 git branch -d"
 
 # Java aliases
 alias javac="javac -Xlint:all"
