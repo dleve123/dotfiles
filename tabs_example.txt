@@ -1,1 +1,1 @@
-this	is	separated	by	tab.
+this	is	separated	by		tab.
