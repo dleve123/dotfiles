@@ -1,5 +1,3 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Vim errywhere
 export EDITOR=vim
 alias vi="vim"
@@ -28,7 +26,6 @@ alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH=$HOME/local/bin:$PATH
 
 set -o vi
 
