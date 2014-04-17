@@ -10,6 +10,8 @@ alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
 
+alias print_path="tr ':' '\n' <<< "$PATH""
+
 # PostgreSQL
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
 
