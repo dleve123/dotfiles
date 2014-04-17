@@ -1,6 +1,5 @@
 # Vim errywhere
-export EDITOR=vim
-alias vi="vim"
+export EDITOR=vi
 
 # Useful bash command aliases
 alias ls="ls -G"
