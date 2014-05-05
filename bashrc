@@ -11,7 +11,7 @@ alias cucumber="bundle exec cucumber"
 alias rspec="rspec --color"
 
 # todo.txt alias
-alias todo="todo.sh -d /usr/local/Cellar/todo-txt/2.10/todo.cfg"
+alias todo="todo.sh -d ~/.todo.cfg"
 alias t=todo
 
 # PostgreSQL
