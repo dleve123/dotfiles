@@ -40,6 +40,10 @@ if [ ! -e ~/.editrc ]; then
   ln -s ~/dotfiles/editrc ~/.editrc
 fi
 
+if [ ! -e ~/.todo.cfg ]; then
+  ln -s ~/dotfiles/todo.cfg ~/.todo.cfg
+fi
+
 # bashrc
 bashgrep=$(grep "source ~/dotfiles/bashrc" ~/.bashrc)
 if [ "$bashgrep" != "source ~/dotfiles/bashrc" ]; then
