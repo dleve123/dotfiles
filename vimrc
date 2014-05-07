@@ -45,6 +45,10 @@ set directory=~/.vim_workplace/tmp
 " Place .viminfo file in .vim_workplace
 set viminfo+=n~/.vim_workplace/.viminfo
 
+" Force vim to read bash_profile file to be a shell file
+au BufNewFile,BufRead bash_profile set syntax=sh
+au BufNewFile,BufRead bash_profile set filetype=sh
+
 " Controls visible window area.
 set scrolloff=10
 
