@@ -27,8 +27,10 @@ alias compileTests="javac -cp junit-4.11.jar:."
 alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
 alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
 
+# Path alterations
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 set -o vi
 
