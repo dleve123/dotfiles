@@ -4,7 +4,6 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
-
 " Mapping leader key
 let mapleader = ","
 
