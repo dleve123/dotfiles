@@ -34,7 +34,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 set -o vi
 
-# Prompt Set Up
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -42,8 +41,11 @@ function parse_git_branch () {
 function parse_pwd () {
   if [ ! -d .git ]; then
     pwd
+  else
+    echo "${PWD##*/}"
   fi
 }
+
 
 RED="\[\033[0;31m\]"
 CYAN="\[\033[0;36m\]"
