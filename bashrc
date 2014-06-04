@@ -39,6 +39,12 @@ function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+function parse_pws () {
+  if [ ! -d .git ]; then
+    pwd
+  fi
+}
+
 RED="\[\033[0;31m\]"
 CYAN="\[\033[0;36m\]"
 YELLOW="\[\033[0;33m\]"
