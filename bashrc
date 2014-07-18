@@ -9,7 +9,7 @@ alias tailf="tail -f"
 alias svim="sudo vim"
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
-alias rspec="rspec --color"
+alias rspec="bundle exec rspec --color"
 
 # todo.txt alias
 alias todo="todo.sh -d ~/.todo.cfg"
