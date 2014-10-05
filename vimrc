@@ -34,7 +34,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 
-" Handles vim temp and backup files
+" Handle vim temp and backup files
 silent !mkdir ~/.vim_workplace > /dev/null 2>&1
 silent !mkdir ~/.vim_workplace/backup > /dev/null 2>&1
 silent !mkdir ~/.vim_workplace/tmp > /dev/null 2>&1
@@ -72,6 +72,9 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
+" Remove trailling whitespace on `:w` - cred: Carlos Souza
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Auto format cucumber tables using Tabularize - cred: T. Pope
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
@@ -88,7 +91,7 @@ endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PROMOTE VARIABLE TO RSPEC LET
-" creds: Gary Bernhardt
+" cred: Gary Bernhardt
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! PromoteToLet()
   :normal! dd
