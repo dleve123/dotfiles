@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-rspec"]
 	path = vim/bundle/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec.git
+[submodule "vim/bundle/vim-cucumber"]
+	path = vim/bundle/vim-cucumber
+	url = git://github.com/tpope/vim-cucumber.git
