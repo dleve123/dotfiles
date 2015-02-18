@@ -14,7 +14,8 @@
   br = branch
   p = push
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  sdiff = diff --staged
 [push]
   default = simple
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
