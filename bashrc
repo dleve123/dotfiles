@@ -22,7 +22,7 @@ alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.lo
 alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 function git-new-remote-tracking {
-  git checkout -b $1 origin/$1
+  git checkout -b $1 && git push -u origin $1
 }
 
 # Java aliases
