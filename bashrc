@@ -1,7 +1,7 @@
 # Vim errywhere
 export EDITOR=vi
 
-# Useful bash command aliases
+# General Bash
 alias ls="ls -G"
 alias ll="ls -al"
 alias l.="ls -d .*"
@@ -11,7 +11,7 @@ alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="bundle exec rspec --color"
 
-# todo.txt alias
+# todo.txt
 alias todo="todo.sh -d ~/.todo.cfg"
 alias t=todo
 
