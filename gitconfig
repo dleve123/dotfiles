@@ -4,6 +4,7 @@
   excludesfile = /Users/daniel/.gitignore_global
   autocrlf = false
   safecrlf = true
+  editor = vim --noplugin
 [user]
   name = Daniel Levenson
   email = dleve123@gmail.com
