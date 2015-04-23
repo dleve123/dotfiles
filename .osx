@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Set screenshot folder to ~/screenshots
+mkdir -p ~/screenshots
+defaults write com.apple.screencapture location ~/screenshots
+killall SystemUIServer
