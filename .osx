@@ -4,3 +4,7 @@
 mkdir -p ~/screenshots
 defaults write com.apple.screencapture location ~/screenshots
 killall SystemUIServer
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
