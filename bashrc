@@ -6,6 +6,10 @@ alias ls="ls -G"
 alias ll="ls -al"
 alias l.="ls -d .*"
 
+# cd aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+
 # Misc aliases
 alias tailf="tail -f"
 alias svim="sudo vim"
