@@ -1,12 +1,16 @@
 # Vim errywhere
 export EDITOR=vi
 
-# General Bash
+# ls aliases
 alias ls="ls -G"
 alias ll="ls -al"
 alias l.="ls -d .*"
+
+# Misc aliases
 alias tailf="tail -f"
 alias svim="sudo vim"
+
+# Ruby aliases
 alias rake="bundle exec rake"
 alias cucumber="bundle exec cucumber"
 alias rspec="bundle exec rspec --color"
