@@ -32,8 +32,14 @@ alias compileTests="javac -cp junit-4.11.jar:."
 alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
 alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
 
+# Healthify aliases
+## Navigation aliases
+alias h='cd ~/code/healthify'
+alias hh='cd ~/code/healthify/healthify'
+
+## Console aliases
 alias hfy_prod_console='aptible ssh bundle exec rails console --app healthify-production'
-alias hfy_staging_console='aptible ssh bundle exec rails console --app healthify-staging-aptible'
+alias hfy_staging_console='aptible ssh bundle exec rails console'
 
 # Path alterations
 ### Added by the Heroku Toolbelt
