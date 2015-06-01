@@ -45,6 +45,7 @@ if [ "$bashgrep" != "source ~/dotfiles/bashrc" ]; then
   echo "source ~/dotfiles/bashrc" >> ~/.bashrc
 fi
 
+# bash_profile
 bashgrep=$(grep "source ~/dotfiles/bash_profile" ~/.bash_profile)
 if [ "$bashgrep" != "source ~/dotfiles/bash_profile" ]; then
   echo "source ~/dotfiles/bash_profile" >> ~/.bash_profile
