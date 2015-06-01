@@ -12,12 +12,6 @@ syntax on
 filetype off
 filetype plugin indent on
 
-" Setting up background with solarized.
-set t_Co=256
-set background=dark
-let g:solarized_termtrans=1
-colorscheme solarized
-
 " Enabling line numbers.
 set number
 
