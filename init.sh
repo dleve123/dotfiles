@@ -50,3 +50,8 @@ bashgrep=$(grep "source ~/dotfiles/bash_profile" ~/.bash_profile)
 if [ "$bashgrep" != "source ~/dotfiles/bash_profile" ]; then
   echo "source ~/dotfiles/bash_profile" >> ~/.bash_profile
 fi
+
+# laptop.local
+if [ ! -e ~/.laptop.local ]; then
+  ln -s ~/dotfiles/laptop.local ~/.laptop.local
+fi
