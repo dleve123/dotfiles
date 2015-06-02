@@ -13,6 +13,7 @@ alias ...='cd ../..'
 # Misc aliases
 alias tailf="tail -f"
 alias svim="sudo vim"
+alias print_path="echo $PATH | tr -s ':' '\n'"
 
 # Ruby aliases
 alias rake="bundle exec rake"
@@ -76,3 +77,5 @@ GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
 PS1="$GREEN\u@\h:$CYAN\$(parse_pwd)$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
+
+export PATH="$HOME/.bin:$PATH"
