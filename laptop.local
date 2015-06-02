@@ -1,8 +1,17 @@
 brew_tap 'caskroom/cask'
 brew_install_or_upgrade 'brew-cask'
 
+# General
 brew cask install google-chrome
 brew cask install divvy
 brew cask install chromecast
-brew cask install gitx
 brew cask install 1password
+brew cask install slack
+
+# Development
+brew cask install gitx
+gem_install_or_update 'travis'
+
+# Healthify specific services
+brew cask install java
+brew_install_or_upgrade elasticsearch
