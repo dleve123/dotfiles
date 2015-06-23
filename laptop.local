@@ -7,11 +7,16 @@ brew cask install divvy
 brew cask install chromecast
 brew cask install 1password
 brew cask install slack
+brew cask install skype
+brew cask install openoffice
 
 # Development
 brew cask install gitx
 gem_install_or_update 'travis'
+brew_install_or_upgrade ssh-copy-id
 
 # Healthify specific services
 brew cask install java
 brew_install_or_upgrade elasticsearch
+brew_install_or_upgrade dnsmasq
+gem_install_or_update 'aptible-cli'
