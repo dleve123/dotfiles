@@ -1,2 +1,4 @@
-## Ignoring vim backup files
+# Ignoring vim backup files
 *~
+# Ignore netrwist history file
+.netrwhist
