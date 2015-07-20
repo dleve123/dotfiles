@@ -15,6 +15,9 @@ filetype plugin indent on
 " Enabling line numbers.
 set number
 
+" Colorscheme configuration
+colorscheme spacegray
+
 " Setting up search setttings.
 set incsearch
 set hlsearch
