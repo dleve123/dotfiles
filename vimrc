@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'ervandew/supertab'
 
 call vundle#end()
