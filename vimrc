@@ -59,7 +59,6 @@ set wildmenu
 set wildmode=list:longest,list:full
 
 " leader bindings
-map <Leader>m :BufExplorer<CR>
 map <Leader><Space> :noh<CR>
 map <Leader>rh xea:f=3x
 
