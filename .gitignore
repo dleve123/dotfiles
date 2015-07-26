@@ -2,3 +2,7 @@
 *~
 # Ignore netrwist history file
 .netrwhist
+
+# TEMP: Ignore libraries managed by Vundle
+vim/bundle/*
+!Vundle.vim

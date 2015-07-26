@@ -1,15 +1,24 @@
 set nocompatible
+filetype off
 
-" Enabling syntax highlighting.
-call pathogen#infect()
-call pathogen#helptags()
+" Vim Plugin Management with Vundle
+" ===== START =====
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ajh17/Spacegray.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'ervandew/supertab'
+
+call vundle#end()
+" ===== END =====
 
 " Mapping leader key
 let mapleader = ","
 
 " Turning on syntax highlighting.
 syntax on
-filetype off
 filetype plugin indent on
 
 " Enabling line numbers.
