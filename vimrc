@@ -11,6 +11,7 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 " ===== END =====
