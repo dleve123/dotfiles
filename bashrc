@@ -38,11 +38,6 @@ alias hh='cd ~/code/healthify/healthify'
 alias hfy_prod_console='aptible ssh bundle exec rails console --app healthify-production'
 alias hfy_staging_console='aptible ssh bundle exec rails console'
 
-# Path alterations
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
 set -o vi
 
 function parse_git_branch () {
