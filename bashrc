@@ -15,18 +15,16 @@ alias tailf="tail -f"
 alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
 
-# Ruby aliases
-alias be="bundle exec"
+alias be="bundle exec" # shorten invocation of `bundle exec`
 
 # PostgreSQL
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
 
-# Git
-alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 function git-new-remote-tracking {
   git checkout -b $1 && git push -u origin $1
 }
+alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d" # remove local tracking branches of branches merged upstream
 
 # Java aliases
 alias javac="javac -Xlint:all"
