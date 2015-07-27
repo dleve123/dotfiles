@@ -48,15 +48,12 @@ set shiftwidth=2
 set softtabstop=2
 
 " Handle vim temp and backup files
-silent !mkdir ~/.vim_workplace > /dev/null 2>&1
-silent !mkdir ~/.vim_workplace/backup > /dev/null 2>&1
-silent !mkdir ~/.vim_workplace/tmp > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp/backup > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp/tmp > /dev/null 2>&1
 set backup
-set backupdir=~/.vim_workplace/backup
-set directory=~/.vim_workplace/tmp
-
-" Place .viminfo file in .vim_workplace
-set viminfo+=n~/.vim_workplace/.viminfo
+set backupdir=~/.vim_tmp/backup
+set directory=~/.vim_tmp/tmp
 
 " Force vim to read bash_profile file to be a shell file
 au BufNewFile,BufRead bash_profile set syntax=sh
