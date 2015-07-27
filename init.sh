@@ -19,11 +19,6 @@ if [ ! -e ~/.tmux.conf ]; then
   ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 fi
 
-# ackrc
-if [ ! -e ~/.ackrc ]; then
-  ln -s ~/dotfiles/ackrc ~/.ackrc
-fi
-
 # inputrc
 if [ ! -e ~/.inputrc ]; then
   ln -s ~/dotfiles/inputrc ~/.inputrc
