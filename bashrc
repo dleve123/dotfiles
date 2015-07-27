@@ -40,25 +40,6 @@ alias hfy_staging_console='aptible ssh bundle exec rails console'
 
 set -o vi
 
-function parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-function parse_pwd () {
-  if [ ! -d .git ]; then
-    pwd
-  else
-    echo "${PWD##*/}"
-  fi
-}
-
-
-RED="\[\033[0;31m\]"
-CYAN="\[\033[0;36m\]"
-YELLOW="\[\033[0;33m\]"
-GREEN="\[\033[0;32m\]"
-NO_COLOUR="\[\033[0m\]"
-
-PS1="$GREEN\u@\h:$CYAN\$(parse_pwd)$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
-
 export PATH="$HOME/.bin:$PATH"
+
+source ~/dotfiles/prompt_config.sh
