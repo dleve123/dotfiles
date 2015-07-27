@@ -5,11 +5,12 @@ if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/vimrc ~/.vimrc
 fi
 
-# git
+# git config
 if [ ! -e ~/.gitconfig ]; then
   ln -s ~/dotfiles/gitconfig ~/.gitconfig
 fi
 
+# git global ignore
 if [ ! -e ~/.gitignore_global ]; then
   ln -s ~/dotfiles/gitignore_global ~/.gitignore_global
 fi
