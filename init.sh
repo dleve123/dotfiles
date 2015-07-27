@@ -5,11 +5,6 @@ if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/vimrc ~/.vimrc
 fi
 
-# vim dir
-if [ ! -e ~/.vim ]; then
-  ln -s ~/dotfiles/vim ~/.vim
-fi
-
 # git
 if [ ! -e ~/.gitconfig ]; then
   ln -s ~/dotfiles/gitconfig ~/.gitconfig
@@ -55,3 +50,6 @@ fi
 if [ ! -e ~/.laptop.local ]; then
   ln -s ~/dotfiles/laptop.local ~/.laptop.local
 fi
+
+# Clone down Vundle
+# :VundleInstall within vim to install git plugins to ~/.vim/bundle
