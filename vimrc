@@ -6,17 +6,18 @@ filetype off
 set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim' " Vim package manager
-Plugin 'ajh17/Spacegray.vim'  " color scheme
-Plugin 'tpope/vim-surround'   " transform surrounding characters like quotes
-Plugin 'tpope/vim-rails'      " shortcuts for operating within Rails projects
-Plugin 'tpope/vim-markdown'   " Syntax files for vim - might not be needed??
-Plugin 'tpope/vim-fugitive'   " Git binding for vim. Home of the awesome :Gblame
-Plugin 'tpope/vim-endwise'    " autocomplete ruby blocks, methods, etc.
-Plugin 'tpope/vim-cucumber'   " syntax files for cucumber
-Plugin 'vim-ruby/vim-ruby'    " syntax and general support for ruby
-Plugin 'ervandew/supertab'    " Autocomplete using <Tab>
-Plugin 'scrooloose/nerdtree'  " Filesystem navigator
+Plugin 'VundleVim/Vundle.vim'   " Vim package manager
+Plugin 'ajh17/Spacegray.vim'    " color scheme
+Plugin 'airblade/vim-gitgutter' " display git diff statuses in vim
+Plugin 'tpope/vim-surround'     " transform surrounding characters like quotes
+Plugin 'tpope/vim-rails'        " shortcuts for operating within Rails projects
+Plugin 'tpope/vim-markdown'     " Syntax files for vim - might not be needed??
+Plugin 'tpope/vim-fugitive'     " Git binding for vim. Home of the awesome :Gblame
+Plugin 'tpope/vim-endwise'      " autocomplete ruby blocks, methods, etc.
+Plugin 'tpope/vim-cucumber'     " syntax files for cucumber
+Plugin 'vim-ruby/vim-ruby'      " syntax and general support for ruby
+Plugin 'ervandew/supertab'      " Autocomplete using <Tab>
+Plugin 'scrooloose/nerdtree'    " Filesystem navigator
 
 call vundle#end()
 " ===== END =====
