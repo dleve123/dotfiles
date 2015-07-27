@@ -1,19 +1,38 @@
 set nocompatible
+filetype off
 
-" Enabling syntax highlighting.
-call pathogen#infect()
-call pathogen#helptags()
+" Vim Plugin Management with Vundle
+" ===== START =====
+set rtp+=~/dotfiles/vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim' " Vim package manager
+Plugin 'ajh17/Spacegray.vim'  " color scheme
+Plugin 'tpope/vim-surround'   " transform surrounding characters like quotes
+Plugin 'tpope/vim-rails'      " shortcuts for operating within Rails projects
+Plugin 'tpope/vim-markdown'   " Syntax files for vim - might not be needed??
+Plugin 'tpope/vim-fugitive'   " Git binding for vim. Home of the awesome :Gblame
+Plugin 'tpope/vim-endwise'    " autocomplete ruby blocks, methods, etc.
+Plugin 'tpope/vim-cucumber'   " syntax files for cucumber
+Plugin 'vim-ruby/vim-ruby'    " syntax and general support for ruby
+Plugin 'ervandew/supertab'    " Autocomplete using <Tab>
+Plugin 'scrooloose/nerdtree'  " Filesystem navigator
+
+call vundle#end()
+" ===== END =====
 
 " Mapping leader key
 let mapleader = ","
 
 " Turning on syntax highlighting.
 syntax on
-filetype off
 filetype plugin indent on
 
 " Enabling line numbers.
 set number
+
+" Colorscheme configuration
+colorscheme spacegray
 
 " Setting up search setttings.
 set incsearch
@@ -29,15 +48,12 @@ set shiftwidth=2
 set softtabstop=2
 
 " Handle vim temp and backup files
-silent !mkdir ~/.vim_workplace > /dev/null 2>&1
-silent !mkdir ~/.vim_workplace/backup > /dev/null 2>&1
-silent !mkdir ~/.vim_workplace/tmp > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp/backup > /dev/null 2>&1
+silent !mkdir ~/.vim_tmp/tmp > /dev/null 2>&1
 set backup
-set backupdir=~/.vim_workplace/backup
-set directory=~/.vim_workplace/tmp
-
-" Place .viminfo file in .vim_workplace
-set viminfo+=n~/.vim_workplace/.viminfo
+set backupdir=~/.vim_tmp/backup
+set directory=~/.vim_tmp/tmp
 
 " Force vim to read bash_profile file to be a shell file
 au BufNewFile,BufRead bash_profile set syntax=sh
@@ -56,7 +72,6 @@ set wildmenu
 set wildmode=list:longest,list:full
 
 " leader bindings
-map <Leader>m :BufExplorer<CR>
 map <Leader><Space> :noh<CR>
 map <Leader>rh xea:f=3x
 
@@ -68,12 +83,6 @@ map <Down> <Nop>
 
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
-
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
 " Auto format cucumber tables using Tabularize - cred: T. Pope
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a

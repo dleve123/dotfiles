@@ -8,7 +8,11 @@ brew cask install chromecast
 brew cask install 1password
 brew cask install slack
 brew cask install skype
+brew cask install spotify
 brew cask install openoffice
+brew cask install firefox
+
+# Manual step for now: set default Terminal.app color scheme to Spacegray.
 
 # Development
 brew cask install gitx

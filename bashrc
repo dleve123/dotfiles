@@ -16,13 +16,7 @@ alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
 
 # Ruby aliases
-alias rake="bundle exec rake"
-alias cucumber="bundle exec cucumber"
-alias rspec="bundle exec rspec --color"
-
-# todo.txt
-alias todo="todo.sh -d ~/.todo.cfg"
-alias t=todo
+alias be="bundle exec"
 
 # PostgreSQL
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
