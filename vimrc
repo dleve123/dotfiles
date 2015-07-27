@@ -75,6 +75,9 @@ set wildmode=list:longest,list:full
 map <Leader><Space> :noh<CR>
 map <Leader>rh xea:f=3x
 
+" Display column at 80 character
+set colorcolumn=80
+
 " Disabling the arrow keys.
 map <Left> <Nop>
 map <Right> <Nop>
