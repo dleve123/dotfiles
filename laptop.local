@@ -18,6 +18,7 @@ brew cask install firefox
 brew cask install gitx
 gem_install_or_update 'travis'
 brew_install_or_upgrade ssh-copy-id
+brew_install_or_upgrade gitsh
 
 # Healthify specific services
 brew cask install java
