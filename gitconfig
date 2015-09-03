@@ -10,12 +10,10 @@
   email = dleve123@gmail.com
 [alias]
   co = checkout
-  ci = commit
+  ci = commit -v
   st = status
   br = branch
-  p = push
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  sdiff = diff --staged
 [push]
   default = simple
 [credential]
