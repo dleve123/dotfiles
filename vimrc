@@ -76,6 +76,7 @@ set wildmode=list:longest,list:full
 " leader bindings
 map <Leader><Space> :noh<CR>
 map <Leader>rh xea:f=3x
+map <Leader>cp :let @+ = expand("%:p")<CR>
 
 " Display column at 80 character
 set colorcolumn=80
