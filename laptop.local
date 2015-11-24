@@ -19,6 +19,9 @@ brew cask install gitx
 gem_install_or_update 'travis'
 brew_install_or_upgrade ssh-copy-id
 # brew_install_or_upgrade gitsh - there's some weirdness here...
+brew cask install virtualbox
+brew cask install docker-machine
+brew_install_or_upgrade fig
 
 # Healthify specific services
 brew cask install java
