@@ -87,6 +87,12 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
+" Remove need for ctrl-w when switching between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
 
