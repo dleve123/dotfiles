@@ -95,6 +95,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType go setlocal noet ts=8 sw=8 sts=8
 
 " Auto format cucumber tables using Tabularize - cred: T. Pope
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
