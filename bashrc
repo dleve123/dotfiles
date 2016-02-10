@@ -14,6 +14,7 @@ alias ...='cd ../..'
 alias tailf="tail -f"
 alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
+alias gpg="gpg2"
 
 alias be="bundle exec" # shorten invocation of `bundle exec`
 
