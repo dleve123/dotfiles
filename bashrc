@@ -42,6 +42,6 @@ alias hfy_staging_console='aptible ssh bundle exec rails console --app healthify
 # TODO: Configure readline to use vi-style keybindings.
 set -o vi
 
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 source ~/dotfiles/prompt_config.sh
