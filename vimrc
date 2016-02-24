@@ -19,6 +19,7 @@ Plugin 'vim-ruby/vim-ruby'      " syntax and general support for ruby
 Plugin 'ervandew/supertab'      " Autocomplete using <Tab>
 Plugin 'scrooloose/nerdtree'    " Filesystem navigator
 Plugin 'kien/ctrlp.vim'         " Fuzzy directory explorer
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 " ===== END =====
