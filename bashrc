@@ -16,7 +16,7 @@ alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
 alias gpg="gpg2"
 
-alias be="bundle exec" # shorten invocation of `bundle exec`
+alias be="bundle exec"
 
 # PostgreSQL
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
