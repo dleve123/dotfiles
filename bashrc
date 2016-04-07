@@ -39,6 +39,9 @@ alias hh='cd ~/code/healthify/healthify'
 alias hfy_prod_console='aptible ssh bundle exec rails console --app healthify-production'
 alias hfy_staging_console='aptible ssh bundle exec rails console --app healthify-staging-aptible'
 
+## Deployment aliases
+alias hfy_deploy_prod='git push production production:master'
+
 # TODO: Configure readline to use vi-style keybindings.
 set -o vi
 
