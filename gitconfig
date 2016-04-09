@@ -20,3 +20,5 @@
   helper = osxkeychain
 [rebase]
   autosquash = true
+[help]
+  autocorrect = 1
