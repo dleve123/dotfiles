@@ -37,7 +37,7 @@ alias hh='cd ~/code/healthify/healthify'
 
 ## Console aliases
 alias hfy_prod_console='aptible ssh bundle exec rails console --app healthify-production'
-alias hfy_staging_console='aptible ssh bundle exec rails console --app healthify-staging-aptible'
+alias hfy_staging_console='aptible ssh bundle exec rails console --app newstg-rails'
 
 ## Deployment aliases
 alias hfy_deploy_prod='git push production production:master'
