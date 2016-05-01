@@ -7,3 +7,4 @@ if which rbenv > /dev/null; then
 fi
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/Users/dan/.multirust/toolchains/stable/cargo/bin:$PATH"
