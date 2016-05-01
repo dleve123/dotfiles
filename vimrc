@@ -19,6 +19,7 @@ Plugin 'vim-ruby/vim-ruby'      " syntax and general support for ruby
 Plugin 'ervandew/supertab'      " Autocomplete using <Tab>
 Plugin 'scrooloose/nerdtree'    " Filesystem navigator
 Plugin 'kien/ctrlp.vim'         " Fuzzy directory explorer
+Plugin 'mileszs/ack.vim'        " Brings text searching (a la ack) to vim
 
 call vundle#end()
 " ===== END =====
@@ -95,6 +96,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Use `ag` when doing :Ack within vim - cred:
+" http://linduxed.com/blog/2013/09/16/vim-search-and-replace-in-bulk/
+if executable("ag")
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
 
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
