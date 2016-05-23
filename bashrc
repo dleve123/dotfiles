@@ -47,4 +47,7 @@ set -o vi
 
 export PATH="$HOME/bin:$PATH"
 
+# Start up https://github.com/mroth/scmpuff
+eval "$(scmpuff init -s)"
+
 source ~/dotfiles/prompt_config.sh
