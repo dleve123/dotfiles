@@ -63,7 +63,7 @@ au BufNewFile,BufRead bash_profile set syntax=sh
 au BufNewFile,BufRead bash_profile set filetype=sh
 
 " Turn on spell check for git commit messages
-autocmd BufNewFile,BufRead COMMIT_EDITMSG set spell
+autocmd BufNewFile,BufRead COMMIT_EDITMSG,*.txt,*.md set spell
 
 " Controls visible window area.
 set scrolloff=10
