@@ -8,6 +8,7 @@
 [user]
   name = Daniel Levenson
   email = dleve123@gmail.com
+  signingkey = 1006D8756D3F91F6
 [alias]
   co = checkout
   ci = commit -v
@@ -22,3 +23,7 @@
   autosquash = true
 [help]
   autocorrect = 1
+[gpg]
+  program = /usr/local/bin/gpg2
+[commit]
+  gpgsign = true
