@@ -47,9 +47,6 @@ set -o vi
 
 export PATH="$HOME/bin:$PATH"
 
-# Start up https://github.com/mroth/scmpuff
-eval "$(scmpuff init -s)"
-
 # Configure gpg2 to use the current TTY
 export GPG_TTY=$(tty)
 
