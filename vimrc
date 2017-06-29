@@ -20,6 +20,7 @@ Plugin 'ervandew/supertab'      " Autocomplete using <Tab>
 Plugin 'scrooloose/nerdtree'    " Filesystem navigator
 Plugin 'kien/ctrlp.vim'         " Fuzzy directory explorer
 Plugin 'mileszs/ack.vim'        " Brings text searching (a la ack) to vim
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 " ===== END =====
