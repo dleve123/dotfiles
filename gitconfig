@@ -14,6 +14,7 @@
   ci = commit -v
   st = status
   br = branch
+  diffs = diff --staged
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [push]
   default = simple
