@@ -107,7 +107,3 @@ endif
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType go setlocal noet ts=8 sw=8 sts=8
-
-" Exit insert mode by typing "f" followed by "g". This is to keep my hands on
-" the home row, increasing productivitiy.
-imap fg <ESC>
