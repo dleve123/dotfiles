@@ -8,3 +8,8 @@ killall SystemUIServer
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Super charge keyboard - make "Key Repeat" and "Delay Until Repeat" as MacOS's
+# defaults
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
