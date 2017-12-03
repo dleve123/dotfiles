@@ -13,3 +13,6 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # defaults
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
