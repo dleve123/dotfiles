@@ -107,3 +107,6 @@ endif
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType go setlocal noet ts=8 sw=8 sts=8
+
+" Switch between the last two files
+nnoremap <Leader><Leader> <C-^>
