@@ -31,14 +31,12 @@ if [ ! -e ~/.editrc ]; then
 fi
 
 # bashrc
-bashgrep=$(grep "source ~/dotfiles/bashrc" ~/.bashrc)
-if [ "$bashgrep" != "source ~/dotfiles/bashrc" ]; then
+if ! ( [ -e ~/.bashrc ] && grep -q "source ~/dotfiles/bashrc" ~/.bashrc ); then
   echo "source ~/dotfiles/bashrc" >> ~/.bashrc
 fi
 
 # bash_profile
-bashgrep=$(grep "source ~/dotfiles/bash_profile" ~/.bash_profile)
-if [ "$bashgrep" != "source ~/dotfiles/bash_profile" ]; then
+if ! ( [ -e ~/.bash_profile ] && grep -q "source ~/dotfiles/bash_profile" ~/.bash_profile ); then
   echo "source ~/dotfiles/bash_profile" >> ~/.bash_profile
 fi
 
