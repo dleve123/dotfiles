@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'    " Filesystem navigator
 Plugin 'kien/ctrlp.vim'         " Fuzzy directory explorer
 Plugin 'mileszs/ack.vim'        " Brings text searching (a la ack) to vim
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 " ===== END =====
