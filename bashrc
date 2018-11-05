@@ -50,5 +50,9 @@ export PATH="$HOME/bin:$PATH"
 # Configure gpg2 to use the current TTY
 export GPG_TTY=$(tty)
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 source ~/dotfiles/homebrew_autocomplete.sh
 source ~/dotfiles/prompt_config.sh
