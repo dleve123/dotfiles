@@ -22,6 +22,7 @@ Plugin 'kien/ctrlp.vim'         " Fuzzy directory explorer
 Plugin 'mileszs/ack.vim'        " Brings text searching (a la ack) to vim
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 " ===== END =====
@@ -111,3 +112,13 @@ autocmd FileType go setlocal noet ts=8 sw=8 sts=8
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
+
+" recommended vim-syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
