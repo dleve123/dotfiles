@@ -24,6 +24,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 " ===== END =====
