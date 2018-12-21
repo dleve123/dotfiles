@@ -24,6 +24,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'christoomey/vim-tmux-runner' " Run commands from vim in a new tmux pane
+Plugin 'thoughtbot/vim-rspec'
 
 call vundle#end()
 " ===== END =====
@@ -86,6 +88,16 @@ map <Leader><Space> :noh<CR>
 map <Leader>rh xea:f=3x
 map <Leader>cp :let @+ = expand("%:p")<CR>
 
+" RSpec.vim
+"" mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+"" change default rspec command wrapper to use vim-tmux-runner
+let g:rspec_command = "call VtrSendCommand('rspec {spec}', 1)"
+
 " Display column at 80 character
 set colorcolumn=80
 
@@ -113,3 +125,9 @@ autocmd FileType go setlocal noet ts=8 sw=8 sts=8
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
+
+" vim-tmux-runner configuration
+"" C-l is already being used for vim-tmux-navigator, so clear instead
+let g:VtrClearSequence = "'clear'"
+"" Use the recommended vim-tmux-navigator bindings, see `:help vtr`
+let g:VtrUseVtrMaps = 1
