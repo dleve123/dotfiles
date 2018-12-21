@@ -8,7 +8,5 @@ set show-all-if-ambiguous on
 set completion-ignore-case on
 
 # hit control-l in bash and irb to clear the console
-set keymap vi-command
-"\C-l": clear-screen
-
-#FIXME: can no longer tab out variable names in ruby and rails consoles...
+set keymap vi-insert
+"\C-L": clear-screen
