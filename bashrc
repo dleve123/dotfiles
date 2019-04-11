@@ -30,18 +30,6 @@ alias compileTests="javac -cp junit-4.11.jar:."
 alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
 alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
 
-# Healthify aliases
-## Navigation aliases
-alias h='cd ~/code/healthify'
-alias hh='cd ~/code/healthify/healthify'
-
-## Console aliases
-alias hfy_prod_console='aptible ssh bundle exec rails console --app healthify-production'
-alias hfy_staging_console='aptible ssh bundle exec rails console --app newstg-rails'
-
-## Deployment aliases
-alias hfy_deploy_prod='git push production production:master'
-
 # TODO: Configure readline to use vi-style keybindings.
 set -o vi
 
@@ -53,6 +41,8 @@ export GPG_TTY=$(tty)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias artsy_gh_compare='hokusai pipeline gitcompare --org-name artsy'
 
 source ~/dotfiles/homebrew_autocomplete.sh
 source ~/dotfiles/prompt_config.sh
