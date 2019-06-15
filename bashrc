@@ -15,6 +15,7 @@ alias tailf="tail -f"
 alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
 alias gpg="gpg2"
+alias current_public_ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 alias be="bundle exec"
 
