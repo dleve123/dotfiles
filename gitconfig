@@ -29,3 +29,5 @@
   program = /usr/local/bin/gpg2
 [commit]
   gpgsign = false
+[pull]
+  rebase = true
