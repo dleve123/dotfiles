@@ -131,3 +131,6 @@ nnoremap <Leader><Leader> <C-^>
 let g:VtrClearSequence = "'clear'"
 "" Use the recommended vim-tmux-navigator bindings, see `:help vtr`
 let g:VtrUseVtrMaps = 1
+
+" Ignore gitignored files in control-p
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
