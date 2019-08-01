@@ -12,6 +12,7 @@
 [alias]
   co = checkout
   ci = commit -v
+  cif = commit --fixup
   st = status
   br = branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
