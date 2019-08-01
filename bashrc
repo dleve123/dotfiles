@@ -16,7 +16,10 @@ alias svim="sudo vim"
 alias print_path="echo $PATH | tr -s ':' '\n'"
 alias gpg="gpg2"
 alias current_public_ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# tmux aliases
 alias t="tmux"
+alias ta="tmux attach -t"
 
 alias be="bundle exec"
 
