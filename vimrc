@@ -3,7 +3,7 @@ filetype off
 
 " Vim Plugin Management with Vundle
 " ===== START =====
-set rtp+=~/dotfiles/vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " Vim package manager
