@@ -45,5 +45,10 @@ if [ ! -e ~/.laptop.local ]; then
   ln -s ~/dotfiles/laptop.local ~/.laptop.local
 fi
 
-# Clone down Vundle
-# :VundleInstall within vim to install git plugins to ~/.vim/bundle
+# Install vim package manager
+if ! [ -d ~/.vim/bundle/Vundle.vim ]; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
+# Install vim plugins from vim
+echo '!!! Manual Step: vim; :VundleInstall'
