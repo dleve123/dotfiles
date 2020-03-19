@@ -79,9 +79,13 @@ set laststatus=2
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 " Enable vim tab completion
+" See https://vim.fandom.com/wiki/Disable_beeping for more
 set wildmenu
 
 set wildmode=list:longest,list:full
+
+" Disable error bells
+set noerrorbells visualbell t_vb=
 
 " leader bindings
 map <Leader><Space> :noh<CR>
