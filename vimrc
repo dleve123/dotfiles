@@ -121,6 +121,15 @@ nnoremap <C-H> <C-W><C-H>
 " http://linduxed.com/blog/2013/09/16/vim-search-and-replace-in-bulk/
 if executable("ag")
     let g:ackprg = 'ag --nogroup --nocolor --column'
+
+    " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
 endif
 
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
@@ -135,6 +144,3 @@ nnoremap <Leader><Leader> <C-^>
 let g:VtrClearSequence = "'clear'"
 "" Use the recommended vim-tmux-navigator bindings, see `:help vtr`
 let g:VtrUseVtrMaps = 1
-
-" Ignore gitignored files in control-p
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
