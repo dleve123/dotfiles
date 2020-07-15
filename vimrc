@@ -132,6 +132,10 @@ if executable("ag")
     let g:ctrlp_use_caching = 0
 endif
 
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+
 " Remove trailling whitespace on `:w` - cred: Carlos Souza
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType go setlocal noet ts=8 sw=8 sts=8
