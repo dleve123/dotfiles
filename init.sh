@@ -41,9 +41,9 @@ if ! ( [ -e ~/.bash_profile ] && grep -q "source ~/dotfiles/bash_profile" ~/.bas
 fi
 
 # laptop.local
-if [ ! -e ~/.laptop.local ]; then
-  ln -s ~/dotfiles/laptop.local ~/.laptop.local
-fi
+# if [ ! -e ~/.laptop.local ]; then
+#   ln -s ~/dotfiles/laptop.local ~/.laptop.local
+# fi
 
 # Install vim package manager
 if ! [ -d ~/.vim/bundle/Vundle.vim ]; then
