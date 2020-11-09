@@ -28,13 +28,6 @@ alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.lo
 
 alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d" # remove local tracking branches of branches merged upstream
 
-# Java aliases
-alias javac="javac -Xlint:all"
-alias java="java -ea"
-alias compileTests="javac -cp junit-4.11.jar:."
-alias runTests="java -cp junit-4.11.jar:. org.junit.runner.JUnitCore"
-alias checkStyle="java -jar checkstyle-5.7-all.jar -c jhu_checks.xml"
-
 # TODO: Configure readline to use vi-style keybindings.
 set -o vi
 
