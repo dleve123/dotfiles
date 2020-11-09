@@ -36,10 +36,5 @@ export PATH="$HOME/bin:$PATH"
 # Configure gpg2 to use the current TTY
 export GPG_TTY=$(tty)
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-alias artsy_gh_compare='hokusai pipeline gitcompare --org-name artsy'
-
 source ~/dotfiles/homebrew_autocomplete.sh
 source ~/dotfiles/prompt_config.sh
