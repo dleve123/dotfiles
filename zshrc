@@ -1,3 +1,5 @@
+autoload -Uz compinit && compinit
+
 # Vim errywhere
 export EDITOR=vi
 
