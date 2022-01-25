@@ -21,8 +21,6 @@ alias current_public_ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias t="tmux"
 alias ta="tmux attach -t"
 
-alias be="bundle exec"
-
 # PostgreSQL
 alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log"
 
