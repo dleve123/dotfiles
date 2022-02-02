@@ -17,5 +17,4 @@ eval RESET='%{$reset_color%}'
 
 NEWLINE=$'\n'
 
-# PS1="%{$fg[green]%}%n@%M:${fg[cyan]%}%d${fg[red]%}$(parse_git_dirty)${fg[yellow]%}$(parse_git_branch)%{$reset_color%}${NEWLINE}$ "
-PS1='${GREEN}%n@%M:${CYAN}%d${RED}$(parse_git_dirty)${YELLOW}$(parse_git_branch)${RESET}${NEWLINE}$ '
+PS1='${GREEN}%n@%m:${CYAN}%d${RED}$(parse_git_dirty)${YELLOW}$(parse_git_branch)${RESET}${NEWLINE}$ '
