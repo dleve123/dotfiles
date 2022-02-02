@@ -36,5 +36,4 @@ export PATH="$HOME/bin:$PATH"
 # Configure gpg2 to use the current TTY
 export GPG_TTY=$(tty)
 
-# source ~/dotfiles/homebrew_autocomplete.sh
 source ~/dotfiles/zsh_prompt_config.sh
