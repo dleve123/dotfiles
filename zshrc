@@ -37,3 +37,4 @@ export PATH="$HOME/bin:$PATH"
 export GPG_TTY=$(tty)
 
 source ~/dotfiles/zsh_prompt_config.sh
+source ~/dotfiles/onehot_netskope_config.sh
