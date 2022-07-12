@@ -28,8 +28,8 @@ alias pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.lo
 
 alias git-delete-merged="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d" # remove local tracking branches of branches merged upstream
 
-# TODO: Configure readline to use vi-style keybindings.
-set -o vi
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 export PATH="$HOME/bin:$PATH"
 
@@ -38,3 +38,4 @@ export GPG_TTY=$(tty)
 
 source ~/dotfiles/zsh_prompt_config.sh
 source ~/dotfiles/onehot_netskope_config.sh
+source ~/dotfiles/onehot_gcloud_sdk_config.sh
