@@ -30,14 +30,9 @@ if [ ! -e ~/.editrc ]; then
   ln -s ~/dotfiles/editrc ~/.editrc
 fi
 
-# bashrc
-if ! ( [ -e ~/.bashrc ] && grep -q "source ~/dotfiles/bashrc" ~/.bashrc ); then
-  echo "source ~/dotfiles/bashrc" >> ~/.bashrc
-fi
-
-# bash_profile
-if ! ( [ -e ~/.bash_profile ] && grep -q "source ~/dotfiles/bash_profile" ~/.bash_profile ); then
-  echo "source ~/dotfiles/bash_profile" >> ~/.bash_profile
+# zshrc
+if ! ( [ -e ~/.zshrc ] && grep -q "source ~/dotfiles/zshrc" ~/.zshrc ); then
+  echo "source ~/dotfiles/zshrc" >> ~/.zshrc
 fi
 
 # laptop.local
