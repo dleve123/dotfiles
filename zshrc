@@ -39,3 +39,14 @@ export GPG_TTY=$(tty)
 source ~/dotfiles/zsh_prompt_config.sh
 source ~/dotfiles/onehot_netskope_config.sh
 source ~/dotfiles/onehot_gcloud_sdk_config.sh
+
+eval "$(direnv hook zsh)"
+
+setopt PROMPT_SUBST
+
+show_virtual_env() {
+  if [[ -n "$CONDA_DEFAULT_ENV" && -n "$DIRENV_DIR" ]]; then
+    echo "($(basename $CONDA_DEFAULT_ENV)) "
+  fi
+}
+PS1='$(show_virtual_env)'$PS1
