@@ -111,6 +111,7 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
+
 " Remove need for ctrl-w when switching between splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -148,3 +149,6 @@ nnoremap <Leader><Leader> <C-^>
 let g:VtrClearSequence = "'clear'"
 "" Use the recommended vim-tmux-navigator bindings, see `:help vtr`
 let g:VtrUseVtrMaps = 1
+
+" if you prefer excluding trailing whitespace by default_
+vnoremap $ g
