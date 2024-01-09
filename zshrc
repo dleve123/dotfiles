@@ -37,8 +37,6 @@ export PATH="$HOME/bin:$PATH"
 export GPG_TTY=$(tty)
 
 source ~/dotfiles/zsh_prompt_config.sh
-source ~/dotfiles/onehot_netskope_config.sh
-source ~/dotfiles/onehot_gcloud_sdk_config.sh
 
 eval "$(direnv hook zsh)"
 
