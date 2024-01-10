@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -xe
+
 # Set screenshot folder to ~/screenshots
 mkdir -p ~/screenshots
 defaults write com.apple.screencapture location ~/screenshots
@@ -11,8 +13,11 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Super charge keyboard - make "Key Repeat" and "Delay Until Repeat" as MacOS's
 # defaults
-defaults write -g InitialKeyRepeat -int 15
-defaults write -g KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# VScode vim
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
