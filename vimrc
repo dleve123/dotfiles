@@ -7,7 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'   " Vim package manager
-Plugin 'ajh17/Spacegray.vim'    " color scheme
+Plugin 'flazz/vim-colorschemes' " collection of color schemes
 Plugin 'airblade/vim-gitgutter' " display git diff statuses in vim
 Plugin 'tpope/vim-surround'     " transform surrounding characters like quotes
 Plugin 'tpope/vim-rails'        " shortcuts for operating within Rails projects
