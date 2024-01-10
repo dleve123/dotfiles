@@ -33,7 +33,7 @@ bindkey '^R' history-incremental-search-backward
 
 export PATH="$HOME/bin:$PATH"
 
-# Configure homebrew for shell
+# Configure shell for homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Configure gpg2 to use the current TTY
