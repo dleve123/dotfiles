@@ -45,6 +45,14 @@
           }
         }
       }
+    },
+    "cask": {
+      "1password": {
+        "version": "8.10.23",
+        "options": {
+          "full_name": "1password"
+        }
+      }
     }
   },
   "system": {
