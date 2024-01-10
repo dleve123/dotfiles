@@ -123,6 +123,9 @@
           "full_name": "visual-studio-code"
         }
       }
+    },
+    "vscode": {
+      "vscodevim.vim": null
     }
   },
   "system": {
