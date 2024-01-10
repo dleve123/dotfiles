@@ -41,8 +41,6 @@ export GPG_TTY=$(tty)
 
 source ~/dotfiles/zsh_prompt_config.sh
 
-eval "$(direnv hook zsh)"
-
 setopt PROMPT_SUBST
 
 show_virtual_env() {
