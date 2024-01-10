@@ -21,7 +21,7 @@
 [push]
   default = simple
 [credential]
-  helper = osxkeychain
+  helper = /usr/local/share/gcm-core/git-credential-manager
 [rebase]
   autosquash = true
 [help]
