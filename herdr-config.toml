@@ -50,6 +50,19 @@ detach = ["prefix+q", "prefix+d"]
 # two most recent panes (works across tabs, so it covers last-window too).
 last_pane = "prefix+m"
 
+# tmux: prefix+s is the default choose-tree binding (session/window
+# navigator), left unbound in tmux.conf so it just uses that default.
+# herdr's workspace_picker ("open the workspace navigation surface") is the
+# closest equivalent, so it takes prefix+s here. settings, which owns
+# prefix+s by default, moves to prefix+shift+s to make room.
+workspace_picker = "prefix+s"
+settings = "prefix+shift+s"
+
+# Vi-style movement inside the workspace picker's navigate mode: j/k for
+# workspace selection, to match the h/j/k/l muscle memory used elsewhere.
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+
 # NOT ported — vim-tmux-navigator (bind -n C-h/C-j/C-k/C-l with is_vim check):
 # herdr can bind direct ctrl+h/j/k/l chords, but it has no conditional
 # "is vim running?" passthrough, so binding them would steal those keys from
