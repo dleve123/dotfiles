@@ -1,0 +1,109 @@
+# herdr config.toml — generated to mirror ~/dotfiles/tmux.conf
+#
+# Each section notes the tmux line(s) it mirrors. Things tmux does that herdr
+# doesn't need (or can't express) are called out at the bottom.
+#
+# Apply changes to a running server with: herdr server reload-config
+# Validate after editing with:            herdr config check
+
+[keys]
+# tmux: set -g prefix C-a / unbind C-b
+# Same prefix as your tmux. Heads-up: unlike tmux there is no "send-prefix"
+# binding, so ctrl+a can't be forwarded to shell readline (beginning-of-line)
+# by pressing it twice. Press esc to leave prefix mode if you hit it by accident.
+prefix = "ctrl+a"
+
+# tmux: bind r source-file ~/.tmux.conf \; display "tmux reloaded!"
+# reload_config defaults to prefix+shift+r; moved to prefix+r to match your
+# muscle memory. resize_mode normally owns prefix+r, so the two are swapped.
+reload_config = "prefix+r"
+resize_mode = "prefix+shift+r"
+
+# tmux: bind | split-window -h  (side-by-side panes)
+#       bind \ split-window -v  (stacked panes)
+# herdr naming is the opposite of tmux's: split_vertical makes a pane to the
+# RIGHT (tmux split-window -h), split_horizontal makes a pane BELOW (-v).
+split_vertical = "prefix+|"
+split_horizontal = "prefix+\\"
+
+# tmux: bind h/j/k/l select-pane -L/-D/-U/-R
+# These are already the herdr defaults; restated here so the file is
+# self-documenting.
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# tmux: bind = / - / + / _ resize-pane -R/-L/-U/-D 5
+# Direct-resize bindings (no resize mode needed), same keys as your tmux.
+resize_pane_right = "prefix+="
+resize_pane_left = "prefix+minus"
+resize_pane_up = "prefix+plus"
+resize_pane_down = "prefix+_"
+
+# tmux: detach is prefix+d; herdr's default is prefix+q. Plain prefix+d is
+# unused by default (close_workspace is prefix+SHIFT+d), so bind both.
+detach = ["prefix+q", "prefix+d"]
+
+# tmux: bind m last-window
+# Closest herdr equivalent is last_pane: global back-and-forth between the
+# two most recent panes (works across tabs, so it covers last-window too).
+last_pane = "prefix+m"
+
+# NOT ported — vim-tmux-navigator (bind -n C-h/C-j/C-k/C-l with is_vim check):
+# herdr can bind direct ctrl+h/j/k/l chords, but it has no conditional
+# "is vim running?" passthrough, so binding them would steal those keys from
+# vim splits and shell line-editing entirely. Use prefix+h/j/k/l above, or
+# uncomment these if you decide you want the direct chords unconditionally:
+# focus_pane_left = "ctrl+h"   # (would replace the prefix+h line above)
+
+[ui]
+# tmux: set -g status-bg blue
+# herdr theming is token-based, not a single status bar color; "blue" as the
+# accent colors highlights, active borders, and navigation UI to match.
+accent = "blue"
+
+# tmux: set -g status-right '#h - #(date +"%l:%M - %D")'
+# Same info at the right edge of the tab bar: hostname, then time/date.
+# strftime %l:%M = 12-hour clock, %D = mm/dd/yy — identical to your date(1) format.
+tab_bar_right = [
+  { type = "hostname" },
+  { type = "datetime", format = "%l:%M - %D" },
+]
+tab_bar_right_separator = " - "
+
+# tmux: set -g status-left "#S "
+# herdr has no session-name status token, but the outer terminal title carries
+# workspace context instead (this is also the default).
+window_title = "{hostname}: {workspace}"
+
+# Not in your tmux.conf, but noted since you're used to tmux's frameless look:
+# uncomment for tmux-style internal splitters with no outer frame or gaps.
+# pane_outer_borders = false
+# pane_gaps = false
+
+# ------------------------------------------------------------------------
+# tmux settings with no herdr equivalent needed:
+#
+# - set -sg escape-time 1          herdr does not have tmux's ESC-vs-Meta
+#                                  ambiguity, so there is nothing to tune.
+# - base-index / pane-base-index   herdr's indexed jumps (prefix+1..9) are
+#                                  already 1-based.
+# - default-terminal xterm-256color  herdr handles terminfo itself.
+# - mode-keys vi + copy-mode v/y bindings  herdr has a tmux-style vi copy
+#                                  mode built in: prefix+[ to enter, h/j/k/l,
+#                                  w/b/e, ctrl+u/ctrl+d, and / search to move,
+#                                  v to select, y to copy, q/esc to leave —
+#                                  the same keys your tmux binds, no config
+#                                  needed. Mouse drag-select also auto-copies
+#                                  (copy_on_select, on by default), and
+#                                  prefix+e opens scrollback in $EDITOR.
+#                                  reattach-to-user-namespace is not needed.
+# - bind C-l send-keys C-l         herdr's prefix (ctrl+a) doesn't shadow
+#                                  ctrl+l, so clear-screen just works.
+# ------------------------------------------------------------------------
+
+show_agent_labels_on_pane_borders = true
+[theme]
+name = "terminal"
+auto_switch = false
