@@ -50,6 +50,10 @@ detach = ["prefix+q", "prefix+d"]
 # two most recent panes (works across tabs, so it covers last-window too).
 last_pane = "prefix+m"
 
+# tmux: rename-window isn't rebound in tmux.conf, so it uses tmux's default
+# prefix+, (comma). herdr's tab is the closest equivalent to tmux's window.
+rename_tab = "prefix+comma"
+
 # tmux: prefix+s is the default choose-tree binding (session/window
 # navigator), left unbound in tmux.conf so it just uses that default.
 # herdr's workspace_picker ("open the workspace navigation surface") is the
