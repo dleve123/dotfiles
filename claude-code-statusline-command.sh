@@ -43,4 +43,6 @@ hostname=$(hostname -s)
 git_dirty=$(parse_git_dirty)
 git_branch=$(parse_git_branch)
 
-printf "${GREEN}%s@%s:${CYAN}%s${RED}%s${YELLOW}%s${RESET} %s%s" "$username" "$hostname" "$cwd" "$git_dirty" "$git_branch" "$model" "$context_display"
+display_path="${cwd/#$HOME/~}"
+
+printf "${GREEN}%s@%s:${CYAN}%s${RED}%s${YELLOW}%s${RESET} %s%s" "$username" "$hostname" "$display_path" "$git_dirty" "$git_branch" "$model" "$context_display"
