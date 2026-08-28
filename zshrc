@@ -32,6 +32,7 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Configure shell for homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
