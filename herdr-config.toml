@@ -103,7 +103,12 @@ window_title = "{hostname}: {workspace}"
 #                                  ctrl+l, so clear-screen just works.
 # ------------------------------------------------------------------------
 
-show_agent_labels_on_pane_borders = true
-[theme]
-name = "terminal"
-auto_switch = false
+# Default agent-row layout is [["state_icon", "workspace", "tab"], ["agent"]];
+# the "agent" row (e.g. "codex", "claude" under a workspace name) renders dim
+# by default for visual hierarchy, which reads as low-contrast gray-on-navy.
+# Override its style to a brighter, non-dim foreground for legibility.
+[ui.sidebar.agents]
+rows = [
+  ["state_icon", "workspace", "tab"],
+  [{ token = "agent", fg = "#a6adc8", bold = false, dim = false }],
+]
