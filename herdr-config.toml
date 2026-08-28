@@ -62,6 +62,11 @@ rename_tab = "prefix+comma"
 workspace_picker = "prefix+s"
 settings = "prefix+shift+s"
 
+# Not from tmux (tmux has no agent concept). previous_agent/next_agent are
+# unset by default; "a" for agent, mirroring the last_pane/tab cycling style.
+next_agent = "prefix+a"
+previous_agent = "prefix+shift+a"
+
 # Vi-style movement inside the workspace picker's navigate mode: j/k for
 # workspace selection, to match the h/j/k/l muscle memory used elsewhere.
 navigate_workspace_up = "k"
