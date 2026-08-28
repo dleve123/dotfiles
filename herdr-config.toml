@@ -71,6 +71,10 @@ navigate_workspace_down = "j"
 # focus_pane_left = "ctrl+h"   # (would replace the prefix+h line above)
 
 [ui]
+# tmux: status-position isn't set in tmux.conf, so it uses tmux's own default
+# of bottom. herdr defaults to top; set this to match.
+tab_bar_position = "bottom"
+
 # tmux: set -g status-bg blue
 # herdr theming is token-based, not a single status bar color; "blue" as the
 # accent colors highlights, active borders, and navigation UI to match.
