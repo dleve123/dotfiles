@@ -32,3 +32,8 @@
   gpgsign = false
 [pull]
   rebase = true
+
+# Machine-local overrides (e.g. work email). Untracked and optional;
+# kept last so its values win over everything above.
+[include]
+  path = ~/.gitconfig.local
